@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ddd;;
+}
+
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7rem;
+}
+.border{
+    height: 3px;
+    width: 120px;
+    background-color: red;
+    margin: 15px 0 30px ;
+}
+
+#testimonials .row{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col{
+    background-color: #fff;
+    margin: 0 1rem;
+    padding: 50px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+}
+#testimonials h2{
+    font-size: 36px;
+}
+
+
+  
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.fas{
+    color: red;
+}
+
+.row .col h3{
+    font-size: 20px;
+}
+
+.stars{
+    margin: 15px 0;
+}
+
+.col p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+    .row{
+        flex-direction: column ;
+    }
+    .row .col{
+        margin:  1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #testimonials{
+        padding: 3rem;
+    }
+}
