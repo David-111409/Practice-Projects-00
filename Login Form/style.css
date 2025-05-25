@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: #626cd6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login_form{
+    max-width: 435px;
+    width: 100%;
+    background-color: #fff;
+    padding: 41px 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    border-radius: 6px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+}
+.login_option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login_option .option{
+    width: calc(100% / 2 - 12px);
+}
+.option a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F8F8FB;
+    border: 1px solid #DADAF2;
+    height: 56px;
+    margin: 34px 0 24px 0;
+    color: #171645;
+    border-radius: 5px;
+    font-weight: 500;
+    gap: 12px;
+    transition: .2s ease;
+}
+
+.option a:hover{
+    background-color: #ededf5;
+    border-color: #626cd6;
+}
+
+.option a img{
+    max-width: 25px;
+}
+.login_form .separator{
+    position: relative;
+    margin-bottom: 24px;
+}
+p {
+    text-align: center;
+    font-weight: 500;
+}
+
+.separator span{
+    padding: 0 10px;
+    background-color:#fff;
+    z-index: 1;
+    position: relative;
+}
+
+.separator::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #c2c2c2;
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+}
+
+
+
+.input_box input{
+    width: 100%;
+    height: 57px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: 1px solid #DADAF2;
+    padding: 0 20px;
+    background: #F8F8FB;
+    outline: none;
+    margin-bottom: 25px;
+    transition: .2s ease;
+}
+.input_box input:focus{
+    border-color: #626cd6;
+}
+.input_box label{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.pass_input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ a{
+    text-decoration: none;
+    color: #626cd6;
+    font-weight: 500;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    text-transform: uppercase;
+    background: #626cd6;
+    height: 56px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size:18px;
+    font-weight: 500;
+    margin-bottom: 28px;
+    transition: .3s ease;
+
+}
+
+button:hover{
+    background-color: #4954d0;
+}
+
+.last{
+    text-align: center;
+    font-weight: 500;
+}
