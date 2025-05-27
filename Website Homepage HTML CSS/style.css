@@ -1,0 +1,129 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
+  width: 100%;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.navbar{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 15px;
+  justify-content: space-between;
+  max-width: 1200px;
+  
+
+}
+
+
+ul.links{
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: .2s ease;
+  font-size: 1rem;
+
+}
+
+.logo a {
+  font-size: 1.8rem;
+}
+
+ul.links a:hover, .signin:hover{
+  color: #47b2e4;
+}
+
+.signup{
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: .375rem;
+  padding: 10px 20px;
+  text-align: center;
+  transition: .2s ease;
+}
+
+.signup:hover{
+  background: #47b2e4;
+}
+
+.signin{
+  margin-right: 30px;
+}
+
+.hero-section{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 95vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+}
+
+.hero{
+  color: #fff;
+  max-width: 50%;
+
+}
+
+.hero h2{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.hero p{
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #c9c7c7;
+}
+
+.hero .buttons a{
+text-decoration: none;
+color: #fff;
+font-weight: 600;
+padding: 12px 24px;
+border-radius: .375rem;
+transition: .2s ease;
+display: inline-block;
+
+}
+.hero-section .img img{
+  width:517px;
+}
+.hero .buttons{
+  margin-top: 40px;
+}
+.buttons .join{
+  background: #47b2e4;
+}
+
+.buttons .learn{
+  border: 1px solid #fff;
+  border-radius: .375rem;
+}
+
+.buttons .join{
+  margin-right: 15px;
+}
+
+.buttons a.learn:hover{
+  background-color: #47b2e4;
+}
+
