@@ -1,1 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+header{
+    height: 80px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    align-items: center;
+    color: #fff;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+
+.nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.humberger{
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    header{
+        padding: 0 3rem;
+        position: relative;
+    }
+    .nav ul{
+        display: block;
+    }
+    .nav ul li {
+        margin: 20px 0px;
+        padding-bottom:10px;
+        border-bottom: 1px solid #a4a4a4;
+
+    }
+    .nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    
+    .nav{
+        position : absolute;
+        top: 80px;
+        left: 0;
+        background-color: #333;
+        padding: 0 3rem;
+        width: 100%;
+        transition: .3s ease;
+        opacity: 0;
+    }
+
+
+     .humberger{
+        display: block;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        position: relative;
+        
+     }
+     .humberger i{
+        inset: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: max-content;
+        min-height: max-content;
+        opacity: 0;
+        transition: .3s ease;
+     }
+     .nav.active{
+        opacity: 1;
+     }
+
+    .humberger i.active{
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+    
+ 
+}
