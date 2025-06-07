@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --gray: #333;
+    --green: #4bae4f;
+    --light-gray:#edeef0;
+}
+::selection{
+    background-color: transparent;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.todo-list .title img{
+    width: 25px;
+    margin-left: 10px;
+}
+
+.container{
+    min-height: 100vh;
+    background-color: var(--gray);
+    padding: 10px;
+}
+
+.todo-list{
+    background: #fff;
+    max-width: 540px;
+    margin : 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.container .todo-list .title{
+    display: flex;
+    align-items:center;
+    margin-bottom: 10px;
+}
+
+.todo-list .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.todo-list .row input{
+    background-color: var(--light-gray);
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+
+input:focus::placeholder{
+    transition: .3s ease;
+    opacity: 0;
+}
+.todo-list .row #btn{
+    border: none;
+    background: var(--green);
+    padding: 12px 30px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+ul#task-list li{
+    cursor: pointer;
+    background-color: var(--light-gray);
+    margin-bottom: 15px;
+    border-radius: 8px;
+    position: relative;
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+}
+
+ul#task-list span{
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 25px;
+    
+}
+
+.container .todo-list ul  li::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top : 32%;
+    left: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--gray);
+} 
+
+  
+  /* When completed: show checkmark */
+  .container .todo-list ul  li.completed::before{
+    content: "✔";
+    color: #fff;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top:32%;
+    left: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: var(--green);
+    border-color: transparent
+  }
+  
+  /* Strike-through text when completed */
+  li.completed {
+    text-decoration: line-through;
+    /* color: gray; */
+  }
+  
