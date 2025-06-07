@@ -17,7 +17,9 @@ body{
     font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--background);
 }
-
+::selection{
+    background-color: transperent;
+}
 #questions{
     min-height: 100vh;
     max-width: 800px;
