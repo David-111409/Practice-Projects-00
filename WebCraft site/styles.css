@@ -1,0 +1,431 @@
+body {
+    font-family: "Cairo", sans-serif;
+    background-color: var(--second-color);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #007bff;
+    --second-color: #f1f1f1;
+}
+header h1 {
+    color: var(--main-color);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 50px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+header ul.wid-menu {
+    display: flex;
+    gap: 20px;
+}
+header ul {
+    list-style: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 100px 0 60px 0;
+    background-color: rgb(8, 33, 49);
+    color: #fff;
+    background-color: var(--main-color);
+}
+.hero h1 {
+    font-size: 2em;
+}
+.btn {
+    padding: 5px 20px;
+    border-radius: 8px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.start {
+    background-color: #fff;
+}
+
+#why {
+    padding: 50px 50px;
+    text-align: center;
+}
+#why h2 {
+    margin-bottom: 30px;
+}
+#why .box {
+    height: 180px;
+    width: 25%;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #aaa;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#why .box p {
+    font-size: 0.9em;
+}
+
+.box h3 {
+    color: var(--main-color);
+}
+
+.parent-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    color: var(--main-color);
+}
+
+.first-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.review-box {
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px #aaa;
+}
+
+.review-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#reviews {
+    background-color: rgba(153, 140, 140, 0.126);
+    padding: 50px 20px;
+}
+
+#reviews h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header #menu {
+    display: none;
+}
+header #menu {
+    cursor: pointer;
+    user-select: none;
+}
+header .menu {
+    color: #000;
+    position: absolute;
+    left: -100%;
+    top: 60px;
+    width: 50%;
+    background-color: rgb(71, 71, 190);
+    color: #fff;
+    padding: 30px 0 15px 0;
+    text-align: center;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+}
+header .menu ul li {
+    padding: 18px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    width: 500px;
+    border-radius: 5px;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+header .menu ul li:hover {
+    color: #000;
+}
+header .menu #log-out {
+    border-radius: 5px;
+    color: grey;
+    width: 500px;
+    padding: 18px;
+    font-size: 1.5em;
+    cursor: pointer;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+header .menu #log-out:hover {
+    color: rgb(107, 92, 47);
+}
+
+@media (max-width: 768px) {
+    input,
+    .form-btn,
+    textarea {
+        width: 80% !important;
+    }
+
+    header .menu {
+        display: flex;
+    }
+    #why .box {
+        width: 100%;
+        height: auto;
+        padding: 15px 0;
+    }
+    #why {
+        padding: 30px 15px;
+    }
+    .parent-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .first-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-works .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .our-works .row img {
+        min-width: 60%;
+    }
+    .hero {
+        font-size: 0.9em;
+    }
+    .hero {
+        text-align: center;
+    }
+
+    .our-price .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .our-price .cards .price-card {
+        min-width: 100%;
+    }
+    header ul.wid-menu {
+        display: none;
+    }
+    header #menu,
+    header #cross {
+        display: inline;
+    }
+}
+
+.our-works {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.our-works .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.our-works .row img {
+    position: relative;
+    top: 0;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #161313;
+    transition: 0.5s all ease;
+}
+.our-works .row img:hover {
+    top: -5px;
+    width: 90%;
+    height: 80%;
+}
+.our-works {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.price-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: right;
+}
+.our-price .price-card h3 {
+    color: var(--main-color);
+    font-weight: bolder;
+    margin-bottom: -5px;
+}
+.our-price h2 {
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+.our-price .price-card {
+    background-color: #fff;
+    width: 30%;
+    max-width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    box-shadow: 2px 2px 10px #aaa;
+    transition: 0.3s all ease;
+}
+.our-price .price-card:hover {
+    top: -5px;
+}
+.our-price .price-card p {
+    margin: 0;
+    font-size: 1.6em;
+    font-weight: bolder;
+    color: rgb(47, 4, 4);
+}
+
+.our-price .price-card .choice {
+    width: 80px;
+    height: 30px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.price-card ul li {
+    margin-bottom: 5px;
+}
+.our-price {
+    padding: 0 80px 50px 80px;
+    text-align: center;
+    background-color: rgba(153, 140, 140, 0.126);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1;
+}
+
+.our-price h2 {
+    font-weight: bolder;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact {
+    padding: 50px 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.contact form input {
+    width: 60%;
+    height: 40px;
+    padding-right: 10px;
+    outline: none;
+}
+.form-btn {
+    width: 60%;
+    background-color: var(--main-color);
+    border: none;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form textarea {
+    width: 60%;
+    height: 100px;
+    padding-right: 10px;
+    padding-top: 10px;
+    outline: none;
+}
+input,
+textarea {
+    border-radius: 6px;
+    border: 2px solid #e8e0e0;
+}
+input:focus,
+textarea:focus {
+    border: 2px solid blue;
+}
+
+.cta {
+    background-color: #343a40;
+    color: #fff;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+button.reserve {
+    background-color: #fff;
+    border: none;
+    color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
