@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background: rgb(206, 209, 214);
+}
+
+div.hero {
+    text-align: center;
+    padding: 50px 30px;
+    background-color: #7c109a;
+    margin-bottom: 10px;
+    color: #fff;
+    position: relative;
+}
+
+div.hero h1 {
+    font-size: 6rem;
+    font-weight: normal;
+}
+
+div.hero h2 {
+    font-size: 1.7rem;
+    font-weight: normal;
+}
+
+div.hero::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to left, rgb(212, 0, 255), #7c109a);
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+}
+
+div.hero::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to right, rgb(212, 0, 255), #7c109a);
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+}
+
+.filter-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.filter-nav a {
+    text-decoration: none;
+    padding: 9px;
+    color: #7c109a;
+    border: 1px solid #bb8dd3;
+    margin: 4px;
+    border-radius: 4px;
+}
+.filter-nav a.chosen {
+    background-color: #702acb;
+    color: #fff;
+}
+.filter-nav a:hover {
+    background-color: #dbbce9;
+}
+
+.filter-nav a.chosen:hover {
+    background-color: #702acb;
+    cursor: default;
+}
+.animal-card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.animal-card-photo {
+    order: 1;
+    grid-row: 1;
+    overflow: hidden;
+}
+.animal-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.animal-card-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.animal-card .animal-card-text {
+    padding: 20px 25px;
+}
+
+.animals {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.animal-card:hover .animal-card-photo img {
+    transform: rotate(20deg) scale(1.4);
+}
+
+.animal-card-text .head h3 {
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+.animal-card-text .head small {
+    color: rgb(176, 176, 176);
+}
+
+.animal-card-text .description {
+    line-height: 1.5;
+}
+
+.primary-btn {
+    color: #fff;
+    background: linear-gradient(#d147d1, #702acb);
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background: linear-gradient(#e35ea7, #d82eb9);
+}
+
+@media (max-width: 768px) {
+    div.hero {
+        padding: 20px 0;
+    }
+    div.hero h1 {
+        font-size: 3.8rem;
+    }
+    div.hero h2 {
+        font-size: 1.3rem;
+    }
+    .filter-nav {
+        padding: 10px;
+    }
+    .filter-nav a {
+        /* width: 10rem; */
+        /* padding: 5px 10px; */
+        /* max-width: 200px; */
+        /* text-align: center; */
+    }
+
+    .animal-card {
+        margin: 20px 4px;
+        padding-bottom: 10px;
+    }
+    .animal-card .animal-card-text {
+        padding: 8px;
+        font-size: 1.2em;
+    }
+    .animal-card-text .description {
+        line-height: 1.4;
+    }
+    .animal-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px;
+    } 
+
+    .only {
+        display: none;
+    }
+    .name{
+        display: none;
+    }
+}
