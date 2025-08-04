@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #aa57cc;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px 25px 15px;
+    border-radius: 7px;
+    margin: 200px auto;
+}
+
+.container input {
+    height: 60px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 19px;
+    padding: 0 17px;
+    margin-top: 15px;
+}
+.container input:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+.container button#check {
+    pointer-events: none;
+    margin-top: 10px 0;
+    height: 56px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    background-color: #aa57cc;
+    color: white;
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 1.2em;
+}
+.container button#check.active {
+    pointer-events: visible;
+    opacity: 1;
+}
+.container h1 {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.container p {
+    font-size: 18px;
+    color: #474747;
+}
+
+div#result {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 19px;
+    margin-top: 10px;
+}
