@@ -1,0 +1,12 @@
+div.clock {
+    font-size: 3em;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour{
+    color: red;
+}
