@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body {
+    background-color: #3164ff;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    font-family: "Roboto Mono";
+}
+.div {
+    width: 45%;
+}
+.container {
+    width: fit-content;
+    max-width: 480px;
+    padding: 70px 40px;
+    background-color: #fff;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border-radius: 8px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+}
+input {
+    height: 50px;
+    margin-top: 10px;
+    padding: 0 10px;
+    outline: none;
+    width: 100%;
+}
+
+input:focus {
+    border-color: #3164ff;
+}
