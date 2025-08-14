@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4d5bf9;
+}
+
+.container {
+    height: 30em;
+    width: 95%;
+    max-width: 800px;
+    /* height: 500px; */
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.content {
+    padding: 1em 1.5em;
+    display: none;
+    overflow: scroll;
+    max-width: 80%;
+}
+
+.content h2{
+    color: #000024;
+
+}
+.content p {
+    font-size: 0.9em;
+    margin-top: .5em;
+    text-align: justify;
+    line-height: 1.9;
+    letter-spacing: .4px;
+    color: #202238;
+
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 100px;
+}
+
+.buttons button {
+    background: #e4e9fd;
+    height: 25%;
+    border: none;
+    border-bottom: 1px solid rgb(211, 206, 206);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+button.active {
+    background-color: #fff;
+    color: #4d5bf9;
+}
+
+div.content.active {
+    display: block;
+}
+
+p::before {
+    content: "📖 "; /* You can change this to any emoji or symbol */
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+
+
+/* .content p */
+
+@media (max-width: 500px) {
+    .content p{
+        text-align: left;
+    }
+    
+}
