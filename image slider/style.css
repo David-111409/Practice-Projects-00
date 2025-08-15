@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container {
+    border-radius: 5px;
+    width: 60%;
+    min-width: 520px;
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    width: 100%;
+    display: none;
+}
+img.active{
+    display: block;
+}
+
+.circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid red;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.circle.active {
+    background-color: red;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+}
+.circles div.circle{
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border: 3px solid #8052ec;
+    background-color: transparent;
+}
+#prev,#next{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background-color: #8052ec;
+    color: #ffffff;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#prev{
+    left : 15px;
+}
+#next{
+    right: 15px;
+}
+.circles .circle.active{
+    background-color: #8052ec;
+}
