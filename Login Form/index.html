@@ -1,46 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="login_form">
-        <form action="#">
-            <h3>Log in with</h3>
-            <div class="login_option">
-                <div class="option">
-                    <a href="">
-                        <img src="logos/google.png" alt="Google"> 
-                        <span>Google</span>
-                     </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Form</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <section class="wrapper">
+                <div class="heading">
+                    <h1 class="text text-large">Sign In</h1>
+                    <p class="text text-normal">
+                        New user?
+                        <span
+                            ><a href="#" class="text text-links"
+                                >Create an account</a
+                            ></span
+                        >
+                    </p>
                 </div>
-                <div class="option">
-                    <a href="">
-                        <img src="logos/apple.png" alt="Apple"> 
-                        <span>Apple</span>
-                     </a>
-                </div>
-                
-            </div>
-            <p class="separator"><span>or</span></p>
-            <div class="input_box">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email address" required>
-            </div>
-            <div class="input_box">
-                <div class="pass_input">
 
-                    <label for="pass">Password</label>
-                    <a href="#">Forgot Password?</a>
+                <form action="" class="form">
+                    <div class="input-control">
+                        <input
+                            type="email"
+                            name=""
+                            id="email"
+                            class="input-field"
+                            placeholder="Email Address"
+                        />
+                    </div>
+                    <div class="input-control">
+                        <input
+                            type="password"
+                            name=""
+                            id="password"
+                            class="input-field"
+                            placeholder="Password"
+                        />
+                    </div>
+                    <div class="input-control">
+                        <a href="" class="text text-links">Forgot Password</a>
+                        <input
+                            type="submit"
+                            class="input-submit"
+                            value="Sign In"
+                        />
+                    </div>
+                </form>
+
+                <div class="striped">
+                    <div class="striped-line"></div>
+                    <div class="striped-text">Or</div>
+                    <div class="striped-line"></div>
                 </div>
-                <input type="email" id="pass" placeholder="Enter your password" required>
-            </div>
-            <button>log in</button>
-            <div class="last">Don't have an account? <a href="#">Sign up</a></div>
-        </form>
-    </div>
-</body>
+
+                <div class="method">
+                    <div class="method-control">
+                        <a href="#" class="method-action">
+                            <i class="fa-brands fa-google"></i>
+                            <span>Sign in with Google</span>
+                        </a>
+                    </div>
+                    <div class="method-control">
+                        <a href="#" class="method-action">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <span>Sign in with Facebook</span>
+                        </a>
+                    </div>
+                    <div class="method-control">
+                        <a href="#" class="method-action">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>Sign in with Apple</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="main.js"></script>
+    </body>
 </html>
