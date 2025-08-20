@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px 20px 20px 30px;
+}
+body {
+    display: grid;
+    place-items: center;
+    background-color: #52a7e0;
+    height: 100vh;
+}
+input.slide {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    width: 80%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+.slide::-moz-range-thumb {
+    width: 20px;              /* circle width */
+    height: 20px;             /* circle height */
+    border-radius: 50%;       /* make it a circle */
+    background: #08d655;      /* circle color */
+    border: none;             /* remove default border */
+    cursor: pointer;
+  }
+.show {
+    font-size: 1.5em;
+}
+
+.slide::-moz-range-progress {
+    height: 8px;
+    border-radius: 5px;
+    background: #08d655; /* progress color */
+  }
