@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+#send-btn {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+div.pop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    background-color: #fff;
+    gap: 15px;
+    /* padding: 40px 20px; */
+    padding: 40px 20px;
+
+    position: absolute;
+    top: -100%;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.pop::after {
+    content: "✔";
+    position: absolute;
+    top: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+.pop button {
+    width: 100%;
+    background-color: green;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+div.pop.active {
+    top: 40%;
+}
