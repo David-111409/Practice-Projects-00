@@ -1,3 +1,4 @@
+const button = document.getElementById("save");
 function saveToFile() {
     // get input value
     const text = document.getElementById("myInput").value;
@@ -15,6 +16,7 @@ function saveToFile() {
 
     // clean up
     URL.revokeObjectURL(link.href);
-  }
+}
 
-  saveToFile();
+button.addEventListener("click", () => saveToFile())
+// saveToFile();
