@@ -1,0 +1,101 @@
+/* div {
+    text-align: center;
+    padding: 20px;
+    margin: 10px auto;
+    width: 500px;
+    color: #fff;
+}
+
+.assign-1-shape-1 {
+    background-color: hsl(271, 76%, 53%);
+    background-color: #8a2ce2;
+    background-color: #8a2ce2;
+}
+
+.assign-1-shape-2 {
+    background-color: hsla(271, 77%, 53%, 0.5);
+    background-color: rgba(138, 43, 227, 0.5);
+    background-color: #8a2be380;
+}
+
+.assign-1-shape-3 {
+    background-color: hsla(271, 76%, 53%, 0.1);
+    background-color: rgba(138, 44, 226, 0.1);
+    background-color: #8a2ce21a;
+
+} */
+
+div {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(222, 217, 217);
+    margin: 10px auto;
+    color: #fff;
+    padding: 20px;
+}
+.assign-4-shape-1 {
+    background-image: url(image/css-assignment-5-8.png);
+    background-repeat: no-repeat;
+    background-size: 80% ;
+}
+
+.assign-4-shape-2 {
+    background-image: url(image/css-assignment-5-8.png);
+    background-repeat: repeat-y;
+    background-size: 80% ;
+    background-position: right;
+}
+
+.assign-4-shape-3 {
+    background-image: url(image/css-assignment-5-8.png);
+    background-repeat:repeat-x;
+    background-size: 80%;
+    background-position: bottom;
+}
+
+.assign-4-shape-4 {
+    background-image: url(image/css-assignment-5-8.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+/* .assign-2-shape-1 {
+    background-image: url(image/css-assignment-5-8.png);
+    background-repeat: no-repeat;
+}
+
+.assign-2-shape-2 {
+    background-image: url(image/css-assignment-5-8.png);
+    background-repeat: repeat-y;
+}
+
+.assign-2-shape-3 {
+    background-image: url(image/css-assignment-5-8.png);
+    background-repeat:repeat-x;
+}
+
+.assign-2-shape-4 {
+    background-image: url(image/css-assignment-5-8.png);
+    background-repeat: repeat;
+} */
+
+/* .assign-2-shape-1 {
+    background-image: url(image/css-assignment-5-8.png);
+    background-repeat: no-repeat;
+}
+
+.assign-2-shape-2 {
+    background-image: url(image/css-assignment-5-8.png);
+    background-repeat: repeat-y;
+    background-position: right;
+}
+
+.assign-2-shape-3 {
+    background-image: url(image/css-assignment-5-8.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.assign-2-shape-4 {
+    background-image: url(image/css-assignment-5-8.png);
+    background-repeat: repeat;
+} */
