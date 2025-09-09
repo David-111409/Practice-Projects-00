@@ -1,0 +1,26 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.four {
+    width: 80%;
+    background-color: rgb(238, 221, 221);
+    font-size: 2em;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    padding: 0 20px;
+    user-select: none;
+    border-radius: 10px;
+    transition: all 0.6s ease;
+    max-height: 2.5em;
+}
+
+.four.click {
+    white-space: wrap;
+    text-transform: unset;
+    max-height: 500px;
+}
