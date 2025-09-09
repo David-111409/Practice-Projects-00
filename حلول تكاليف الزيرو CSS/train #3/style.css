@@ -1,0 +1,38 @@
+/* .parent .child .title{
+    color: red;
+}
+
+.parent .child .title, .parent p , div.title{
+    color: green;
+}
+
+.parent span.title{
+    color: blue;
+} */
+
+* {
+    box-sizing: border-box;
+}
+.one,
+.two,
+.three,
+.four {
+    background-color: red;
+    color: #fff;
+    max-width: 400px;
+    margin: 20px 0;
+    padding: 10px;
+    text-transform: capitalize;
+    max-height: 60px;
+}
+
+.one,
+.two,
+.three {
+    width: fit-content;
+}
+
+.four {
+    /* color: black; */
+    overflow: hidden;
+}
